@@ -26,4 +26,3 @@ else {
 
 __END__
 
-http://search.cpan.org/dist/Char::Big5Plus-Regexp/
