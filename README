@@ -620,5 +620,5 @@ See also code table:
 
 SEE ALSO
 
-perl, Sjis.pm
+perl, Big5Plus.pm, Ebig5plus.pm, jacode.pl
 
