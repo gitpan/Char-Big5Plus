@@ -4,7 +4,6 @@ die "This file is not encoded in Char::Big5Plus.\n" if q{‚ } ne "\x82\xa0";
 my $__FILE__ = __FILE__;
 
 use Char::Big5Plus;
-use lib qw(./);
 print "1..1\n";
 
 my $chcp = '';
@@ -22,6 +21,7 @@ close(FILE);
 
 # require
 eval {
+    unshift @INC, '.';
     require 'F‹@”\';
 };
 if ($@) {
