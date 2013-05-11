@@ -49,45 +49,6 @@ To install this software without make, type the following:
    pmake.bat dist       --- make distribution package
    pmake.bat ptar.bat   --- make perl script "ptar.bat"
 
-PROGRAM COMPOSITION
-
-   Char/Big5Plus.pm      --- source code filter for Big5Plus script
-   Char/Ebig5plus.pm     --- run-time routines for Char/Big5Plus.pm
-   Big5Plus.pm           --- alias of Char/Big5Plus.pm
-   Ebig5plus.pm          --- alias of Char/Ebig5plus.pm
-   perl5.bat             --- find and run perl5    without %PATH% settings
-   perl55.bat            --- find and run perl5.5  without %PATH% settings
-   perl56.bat            --- find and run perl5.6  without %PATH% settings
-   perl58.bat            --- find and run perl5.8  without %PATH% settings
-   perl510.bat           --- find and run perl5.10 without %PATH% settings
-   perl512.bat           --- find and run perl5.12 without %PATH% settings
-   perl514.bat           --- find and run perl5.14 without %PATH% settings
-   perl516.bat           --- find and run perl5.16 without %PATH% settings
-   perl64.bat            --- find and run perl64   without %PATH% settings
-   perl64512.bat         --- find and run perl5.12 (x64) without %PATH% settings
-   perl64514.bat         --- find and run perl5.14 (x64) without %PATH% settings
-   perl64516.bat         --- find and run perl5.16 (x64) without %PATH% settings
-   aperl58.bat           --- find and run ActivePerl 5.8  without %PATH% settings
-   aperl510.bat          --- find and run ActivePerl 5.10 without %PATH% settings
-   aperl512.bat          --- find and run ActivePerl 5.12 without %PATH% settings
-   aperl514.bat          --- find and run ActivePerl 5.14 without %PATH% settings
-   aperl516.bat          --- find and run ActivePerl 5.16 without %PATH% settings
-   aperl64512.bat        --- find and run ActivePerl 5.12 (x64) without %PATH% settings
-   aperl64514.bat        --- find and run ActivePerl 5.14 (x64) without %PATH% settings
-   aperl64516.bat        --- find and run ActivePerl 5.16 (x64) without %PATH% settings
-   sperl58.bat           --- find and run Strawberry Perl 5.8  without %PATH% settings
-   sperl510.bat          --- find and run Strawberry Perl 5.10 without %PATH% settings
-   sperl512.bat          --- find and run Strawberry Perl 5.12 without %PATH% settings
-   sperl514.bat          --- find and run Strawberry Perl 5.14 without %PATH% settings
-   sperl516.bat          --- find and run Strawberry Perl 5.16 without %PATH% settings
-   sperl64512.bat        --- find and run Strawberry Perl 5.12 (x64) without %PATH% settings
-   sperl64514.bat        --- find and run Strawberry Perl 5.14 (x64) without %PATH% settings
-   sperl64516.bat        --- find and run Strawberry Perl 5.16 (x64) without %PATH% settings
-   strict.pm_            --- dummy strict.pm
-   warnings.pm_          --- poor warnings.pm
-   warnings/register.pm_ --- poor warnings/register.pm
-   feature.pm_           --- dummy feature.pm
-
 DEPENDENCIES
 
 This software requires perl5.00503 or later.
@@ -178,8 +139,8 @@ In most vendor extensions, extended characters are placed in the various
 zones reserved for user-defined characters, each of which are normally
 regarded as associated with the preceding zone. For example, additional
 "graphical characters" (e.g., punctuation marks) would be expected to be
-placed in the 0xa3c0Çú0xa3fe range, and additional logograms would be placed
-in either the 0xc6a1Çú0xc8fe or the 0xf9d6Çú0xfefe range. Sometimes, this is
+placed in the 0xa3c0..0xa3fe range, and additional logograms would be placed
+in either the 0xc6a1..0xc8fe or the 0xf9d6..0xfefe range. Sometimes, this is
 not possible due to the large number of extended characters to be added;
 for example, Cyrillic letters and Japanese kana have been placed in the zone
 associated with "frequently-used characters".
@@ -377,7 +338,7 @@ Government created the Big5 extensions Government Chinese Character Set in
 1995 and Hong Kong Supplementary Character Set in 1999. The Hong Kong
 extensions were commonly distributed as a patch. It is still being distributed
 as a patch by Microsoft, but a full Unicode font is also available from the
-Hong Kong GovernmentÅfs web site.
+Hong Kong Government's web site.
 
 There are two encoding schemes of HKSCS: one encoding scheme is for the Big-5
 coding standard and the other is for the ISO 10646 standard. Subsequent to
