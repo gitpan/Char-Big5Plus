@@ -29,7 +29,7 @@ BEGIN {
 # (and so on)
 
 BEGIN { eval q{ use vars qw($VERSION) } }
-$VERSION = sprintf '%d.%02d', q$Revision: 0.90 $ =~ /(\d+)/oxmsg;
+$VERSION = sprintf '%d.%02d', q$Revision: 0.91 $ =~ /(\d+)/oxmsg;
 
 BEGIN { CORE::require Ebig5plus; }
 
@@ -500,7 +500,7 @@ sub Big5Plus::escape_script {
         # in Chapter 5: Pattern Matching
         # of ISBN 978-0-596-00492-7 Programming Perl 4th Edition.
 
-        $e_script .= sprintf("use Ebig5plus %s;\n", $Big5Plus::VERSION); # require run-time routines version
+        $e_script .= sprintf("use Ebig5plus %s.0;\n", $Big5Plus::VERSION); # require run-time routines version
 
         # use Big5Plus version qw(ord reverse getc);
         $function_ord     = 'ord';
@@ -6819,12 +6819,6 @@ Big5Plus.pm removes 'bytes::' at head of function name.
   bytes::substr    substr    Byte
   ---------------------------------------
 
-=head1 Escaping Built-in Standard Module (Ebig5plus.pm provides)
-
-Ebig5plus.pm does "BEGIN { unshift @INC, '/Perl/site/lib/Big5Plus' }" at head.
-Store the standard module modified for Big5Plus software in this directory to
-override built-in standard modules.
-
 =head1 Escaping Standard Module Content (You do)
 
 You need copy built-in standard module to /Perl/site/lib/Big5Plus and change
@@ -7562,3 +7556,4 @@ I am thankful to all persons.
 
 =cut
 
+# Did you fun enough? ^o^)
