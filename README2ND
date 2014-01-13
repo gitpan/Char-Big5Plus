@@ -1,14 +1,12 @@
 NAME
 
-       Char::Big5Plus - Source code filter for Big5Plus script (Imitation JPerl)
+       Big5Plus - Source code filter for Big5Plus script (Imitation JPerl)
 
 SYNOPSIS
 
     In your script:
 
-      use Char::Big5Plus; # CPAN formal style
-         or
-      use Big5Plus; # casual style
+      use Big5Plus;
 
     At command prompt:
 
