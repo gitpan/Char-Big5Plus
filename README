@@ -12,7 +12,7 @@ DESCRIPTION
   environment in Big5Plus by easy installation and easy usage.
 
   - Character oriented regular expression
-  - Character oriented run-time routines
+  - Character oriented runtime routines
   - Character oriented subroutines
       and
   - Byte oriented CORE::* functions
@@ -45,6 +45,7 @@ INSTALLATION
 
 SUBROUTINES
 
+  Big5Plus::eval(charstring)
   Big5Plus::length(charstring)
   Big5Plus::substr(charstring, charpos, charlen)
   and more...
